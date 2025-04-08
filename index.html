@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Strona logowania</title>
+  <style>
+    /* Ustawienia podstawowe */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Kontener, który centruje zawartość */
+    .container {
+      text-align: center;
+    }
+    /* Styl dla miejsca na logo */
+    .logo {
+      margin-bottom: 20px;
+    }
+    .logo img {
+      max-width: 200px;
+      height: auto;
+    }
+    /* Styl formularza */
+    .login-form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .login-form input {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+      border: none;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .login-form button {
+      padding: 10px 20px;
+      width: 224px;
+      border: none;
+      border-radius: 4px;
+      background-color: #444;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <!-- Wstaw tutaj swoje logo, zmień src na ścieżkę do pliku -->
+      <img src="logo-placeholder.png" alt="Logo">
+    </div>
+    <div class="login-form">
+      <input type="text" id="username" placeholder="Login" required>
+      <br>
+      <input type="password" id="password" placeholder="Hasło" required>
+      <br>
+      <button onclick="login()">Zaloguj</button>
+    </div>
+  </div>
+  <script>
+    function login() {
+      // Pobieranie wartości z formularza
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Weryfikacja danych
+      if (username === "Doktor" && password === "Breen") {
+        alert("Pomyślnie zalogowano!");
+        // Jeśli chcesz przekierować, odkomentuj poniższą linię:
+        // window.location.href = "success.html";
+      } else {
+        alert("Błędny login lub hasło!");
+      }
+    }
+  </script>
+</body>
+</html>
