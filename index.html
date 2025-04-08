@@ -25,7 +25,8 @@
       margin-bottom: 20px;
     }
     .logo img {
-      max-width: 200px;
+      /* Zwiększona szerokość logo */
+      max-width: 400px; /* lub użyj width: 400px; */
       height: auto;
     }
     /* Styl formularza inspirowany kolorami Umbrella Corporation z Resident Evil */
@@ -65,7 +66,7 @@
 <body>
   <div class="container">
     <div class="logo">
-      <!-- Zamień "logo-animation.gif" na ścieżkę do swojego pliku (GIF może być animowany) -->
+      <!-- Upewnij się, że plik GIF jest w tym samym katalogu -->
       <img src="logo.gif" alt="Logo">
     </div>
     <div class="login-form">
@@ -78,15 +79,10 @@
   </div>
   <script>
     function login() {
-      // Pobieranie wartości z formularza
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
-
-      // Weryfikacja danych
       if (username === "Doktor" && password === "Breen") {
         alert("Pomyślnie zalogowano!");
-        // Jeśli chcesz przekierować, odkomentuj poniższą linię:
-        // window.location.href = "success.html";
       } else {
         alert("Błędny login lub hasło!");
       }
