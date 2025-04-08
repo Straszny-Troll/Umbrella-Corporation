@@ -28,38 +28,45 @@
       max-width: 200px;
       height: auto;
     }
-    /* Styl formularza */
+    /* Styl formularza inspirowany kolorami Umbrella Corporation z Resident Evil */
     .login-form {
-      background-color: rgba(255, 255, 255, 0.1);
+      background: linear-gradient(135deg, #1a1a1a, #333);
       padding: 20px;
       border-radius: 8px;
+      border: 2px solid #a30000; /* Czerwony akcent */
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
       display: inline-block;
     }
     .login-form input {
+      background-color: #222;
+      border: 1px solid #555;
+      color: #fff;
       padding: 10px;
       margin-bottom: 10px;
       width: 200px;
-      border: none;
       border-radius: 4px;
       box-sizing: border-box;
     }
     .login-form button {
-      padding: 10px 20px;
-      width: 224px;
+      background-color: #a30000;
+      color: #fff;
       border: none;
       border-radius: 4px;
-      background-color: #444;
-      color: #fff;
+      padding: 10px 20px;
+      width: 224px;
       cursor: pointer;
       font-size: 16px;
+    }
+    .login-form button:hover {
+      background-color: #c10000;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="logo">
-      <!-- Wstaw tutaj swoje logo, zmień src na ścieżkę do pliku -->
-      <img src="logo.gif" alt="Logo">
+      <!-- Zamień "logo-animation.gif" na ścieżkę do swojego pliku (GIF może być animowany) -->
+      <img src="logo-animation.gif" alt="Logo">
     </div>
     <div class="login-form">
       <input type="text" id="username" placeholder="Login" required>
