@@ -66,7 +66,7 @@
   <div class="container">
     <div class="logo">
       <!-- Zamień "logo-animation.gif" na ścieżkę do swojego pliku (może być animowany GIF) -->
-      <img src="logo-animation.gif" alt="Logo">
+      <img src="logo.gif" alt="Logo">
     </div>
     <!-- Formularz został opakowany w tag <form> -->
     <form class="login-form" onsubmit="login(); return false;">
@@ -82,7 +82,7 @@
     function login() {
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
-      if (username === "Doktor" && password === "Breen") {
+      if (username === "Admin" && password === "Wojager1") {
         alert("Pomyślnie zalogowano!");
         // Jeśli chcesz przekierować, możesz odkomentować poniższą linię:
         // window.location.href = "success.html";
